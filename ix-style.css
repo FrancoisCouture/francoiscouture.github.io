@@ -28,7 +28,6 @@ body{
 
 #high, #s-main{
   background-color:white;
-
 }
 
 a, img {
@@ -40,19 +39,16 @@ a, img {
 .emblem {
   display: inline-block;
   float:left;
-  
 }
 
 .emblem img {
   width: 199px;
-  height: 96px;
-  
+  height: 96px; 
 }
 
 .n-btns {
   display: inline-block;
   float: right;
-  /* justify-content: flex-end; */
   min-width: 380px;
   margin: 0 0 auto auto;
   text-align: center;
@@ -110,9 +106,8 @@ ul{
   display: block;
   position: fixed;
   top: -1%;
-  left: 50%;
   z-index: 2;
-  margin: 0 auto;
+  left: 48.5%;
   opacity: 0;
 }
 
