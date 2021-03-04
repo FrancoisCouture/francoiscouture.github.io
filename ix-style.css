@@ -50,18 +50,14 @@ a, img {
   display: inline-block;
   float: right;
   min-width: 380px;
-  margin: 0 0 auto auto;
   text-align: center;
 }
-.n-btns > .n-btn {
-  flex: 1 1 auto;
-}
+
 
 .n-btn {
   display: inline-block;
   height: 100%;
-  text-align: center;
-  
+  overflow: hidden;
 }
 
 .n-btn a{
@@ -77,6 +73,43 @@ a, img {
   transition: background-color 0.5s ease;
   background-color: #d3d3d3;
   border-radius: 2px;
+}
+
+.dd-nav{
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding-top: 2px;
+}
+#dd-prog{width: 325px;}
+#dd-abt{width: 425px;}
+
+#n-prog:hover #dd-prog, #n-abt:hover #dd-abt{
+  display: block;
+}
+
+#dd-prog a, #dd-abt a{
+  display: block;
+  text-align: left;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+}
+
+#dd-prog a:hover,#dd-abt a:hover{
+  transition: background-color 0.25s ease;
+  background-color: #d3d3d3;
+  border-radius: 2px;
+  
+}
+
+#dd-prog a img, #dd-abt a img {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  float: right;
 }
 
 .n-special{ 
@@ -102,7 +135,7 @@ ul{
   overflow: hidden;
 }
 
-#dd {
+#arr-i {
   display: block;
   position: fixed;
   top: -1%;
@@ -111,7 +144,7 @@ ul{
   opacity: 0;
 }
 
-#dd-img {
+#arr-img {
   width: 50px;
   height: 5px;
 }
