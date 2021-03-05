@@ -1,5 +1,5 @@
 var prevScrollpos = window.pageYOffset;
-var highWindow = document.getElementById("high");
+var highWindow = document.getElementById("h-high");
 var arrImg = document.getElementById("arr-i");
 var ddProg = document.getElementById("dd-prog");
 var ddAbt = document.getElementById("dd-abt");

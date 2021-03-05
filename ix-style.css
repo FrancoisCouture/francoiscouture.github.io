@@ -9,7 +9,7 @@ body{
   font-size: 12px;
   line-height: 32px;
 }
-#high{
+#h-high{
   display: block;
   position: fixed;
   z-index: 2;
@@ -23,10 +23,10 @@ body{
   border-right: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
   border-radius: 2px;
-  box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+  box-shadow: 0px 2px 2px #dddddd, 0px 5px 5px #dddddd;
 }
 
-#high, #s-main{
+#high, #s-main, #f-bottom{
   background-color:white;
 }
 
@@ -36,12 +36,12 @@ a, img {
   outline: none;
 }
 
-.emblem {
+#h-emblem {
   display: inline-block;
   float:left;
 }
 
-.emblem img {
+#h-emblem img {
   width: 199px;
   height: 96px; 
 }
@@ -94,7 +94,7 @@ a, img {
   border-right: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
   border-radius: 2px;
-  box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+  box-shadow: 0px 2px 2px #dddddd, 0px 1px 5px #dddddd;
 }
 
 #dd-prog a:hover,#dd-abt a:hover{
@@ -105,6 +105,7 @@ a, img {
 }
 
 #dd-prog a img, #dd-abt a img {
+  position: relative;
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -154,13 +155,37 @@ ul{
   position: relative;
   z-index: 1;
   top: 150px;
-  height: 80%;
   width: 70%;
   margin: 0 auto;
   min-width: 750px;
-  border-bottom: 3px solid #dddddd;
-  border-radius: 8px;
 }
+
+#f-bottom{
+  display: block;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  top: 150px;
+  width: 75%;
+  height: 25px;
+  margin: 50px auto 0;
+  
+  border-radius: 4px;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
+}
+
+#f-bottom span{
+  font-family: sans-serif;
+  position: absolute;
+  display: inline;
+  vertical-align: bottom;
+  background-color: #1287A8;
+  border-radius: 4px;
+  color: white;
+  padding: 0 2px;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
+}
+
 
 
 
