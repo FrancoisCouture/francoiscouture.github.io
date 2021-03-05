@@ -12,7 +12,7 @@ body{
 #h-high{
   display: block;
   position: fixed;
-  z-index: 2;
+  z-index: 9;
   background-color:white;
   top: 0;
   width: 75%;
@@ -140,7 +140,7 @@ ul{
   display: block;
   position: fixed;
   top: -1%;
-  z-index: 2;
+  z-index: 9;
   left: 48.5%;
   opacity: 0;
 }
@@ -157,7 +157,7 @@ ul{
   top: 150px;
   width: 70%;
   margin: 0 auto;
-  min-width: 750px;
+  min-width: 1000px;
 }
 
 #s-content {
@@ -167,20 +167,61 @@ ul{
   border-radius: 10px;
 }
 
-#s-img1 {
+.s-head{
   position: relative;
-  display: block;
-  margin-left: 2%;
-  float: right;
-  top: 100;
-  max-width: 400px;
-  max-height: 600px;
-  border-radius: 20px 20px 20px 20px;
+  display: inline-block;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  background-color: white;
+  padding: 0 0 0% 1.5%;
+  width: 175px;
+  margin-left: -1%;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
 }
+#sh-1 {
+  margin-left: 0%;
+}
+
+
+.s-content{
+  clear:left;
+  position: relative;
+  display: none;
+  height: 2500px;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd, 0px -1px 5px black;
+  border-radius: 0px 2px 2px 2px;
+  z-index: 4;
+  display: block;
+  padding: 1% 5%;
+}
+.s-content img{
+  display: block;
+  border-radius: 5px;
+}
+#jv-ss-img1{
+  float: right;
+  
+}
+#jv-ss-img2{
+  float: right;
+  margin-top: 20px;
+  margin-left: 5%;
+  
+}
+#jv-ss-img3, #jv-ss-img4, #jv-ss-img5{
+  float: left;
+  clear: both;
+  margin-top: 100px;
+  border: 1px solid #555555;
+}
+
 
 #s-main h1 {
   font-family: "Lucida Console", sans-serif;
   font-size: 30px;
+  margin-bottom: 5%;
   
 }
 
