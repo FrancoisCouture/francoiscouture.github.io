@@ -194,7 +194,7 @@ ul{
   border-radius: 0px 2px 2px 2px;
   z-index: 4;
   display: block;
-  padding: 1% 5%;
+  padding: 10px 5%;
 }
 .s-content img{
   display: block;
@@ -224,7 +224,7 @@ ul{
 #s-main h1 {
   font-family: "Lucida Console", sans-serif;
   font-size: 30px;
-  margin-bottom: 5%;
+  margin-bottom: 30px;
   
 }
 
