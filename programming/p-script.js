@@ -3,6 +3,7 @@ var highWindow = document.getElementById("h-high");
 var arrImg = document.getElementById("arr-i");
 var ddProg = document.getElementById("dd-prog");
 var ddAbt = document.getElementById("dd-abt");
+var tabs = document.getElementsByClassName("s-head");
 
 window.onload = function() {
   var currentScrollpos = window.pageYOffset;
@@ -118,10 +119,10 @@ function canClickTab(tab) {
   else                        {return tab.style.cursor = "default"; }  
 }
 /* Applies to */
-document.getElementById("sh-1").onmouseover = function () {canClickTab(this)};
-document.getElementById("sh-2").onmouseover = function () {canClickTab(this)};
-document.getElementById("sh-3").onmouseover = function () {canClickTab(this)};
-document.getElementById("sh-4").onmouseover = function () {canClickTab(this)};
+for(var i = 0;i < tabs.length;i++){
+  tabs[i].onmouseover = function () {canClickTab(this)};
+  
+}
 
 
 /* Function *******************/
@@ -154,7 +155,7 @@ function switchTab(tab) {
   } 
 } 
 /* Applies to */
-document.getElementById("sh-1").onclick = function () {switchTab(this)};
-document.getElementById("sh-2").onclick = function () {switchTab(this)};
-document.getElementById("sh-3").onclick = function () {switchTab(this)};
-document.getElementById("sh-4").onclick = function () {switchTab(this)};
+for(var i = 0;i < tabs.length;i++){
+  tabs[i].onclick = function() {switchTab(this);};
+  
+}

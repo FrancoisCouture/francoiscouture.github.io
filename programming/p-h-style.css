@@ -1,0 +1,256 @@
+body{
+  font-family: Arial;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  min-width: 1000px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  line-height: 32px;
+}
+#h-high{
+  display: block;
+  position: fixed;
+  z-index: 9;
+  background-color:white;
+  top: 0;
+  width: 75%;
+  left: 12.5%;
+  height: 5%;
+  min-height: 100px;
+  min-width: 805px;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px #dddddd, 0px 5px 5px #dddddd;
+}
+
+#high, #s-main, #f-bottom{
+  background-color:white;
+}
+
+a, img {
+  border: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+#h-emblem {
+  display: inline-block;
+  float:left;
+}
+
+#h-emblem img {
+  width: 199px;
+  height: 96px; 
+}
+
+.n-btns {
+  display: inline-block;
+  float: right;
+  min-width: 380px;
+  text-align: center;
+}
+
+
+.n-btn {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.n-btn a{
+  display: block;
+  color: #545454;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  height: 100%;
+}
+
+.n-reg:hover {
+  transition: background-color 0.5s ease;
+  background-color: #d3d3d3;
+  border-radius: 2px;
+}
+
+.dd-nav{
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding-top: 2px;
+}
+#dd-prog{width: 325px;}
+#dd-abt{width: 425px;}
+
+#n-prog:hover #dd-prog, #n-abt:hover #dd-abt{
+  display: block;
+}
+
+#dd-prog a, #dd-abt a{
+  display: block;
+  text-align: left;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px #dddddd, 0px 1px 5px #dddddd;
+}
+
+#dd-prog a:hover,#dd-abt a:hover{
+  transition: background-color 0.25s ease;
+  background-color: #d3d3d3;
+  border-radius: 2px;
+  
+}
+
+#dd-prog a img, #dd-abt a img {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  float: right;
+}
+
+.n-special{ 
+  background-color: #1287A8;
+  margin-left: -3px;
+  border-radius: 3px;
+}
+
+.n-special a{
+  color: white;  
+}
+
+.n-special:hover {
+  transition: background-color 0.5s ease;
+  background-color: #0f708a;
+  
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#arr-i {
+  display: block;
+  position: fixed;
+  top: -1%;
+  z-index: 9;
+  left: 48.5%;
+  opacity: 0;
+}
+
+#arr-img {
+  width: 50px;
+  height: 5px;
+}
+
+#s-main{
+  display: block;
+  position: relative;
+  z-index: 1;
+  top: 150px;
+  width: 70%;
+  margin: 0 auto;
+  min-width: 1000px;
+}
+
+#s-content {
+  display: block;
+  padding: 3% 2%;
+  border-top: 3px solid #dddddd;
+  border-radius: 10px;
+}
+
+.s-head{
+  position: relative;
+  display: inline-block;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  background-color: white;
+  padding: 0 0 0% 1.5%;
+  width: 175px;
+  margin-left: -1%;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
+}
+#sh-1 {
+  margin-left: 0%;
+}
+
+
+.s-content{
+  clear:left;
+  position: relative;
+  display: none;
+  height: 2750px;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd, 0px -1px 5px black;
+  border-radius: 0px 2px 2px 2px;
+  z-index: 4;
+  display: block;
+  padding: 10px 5%;
+}
+.s-content img{
+  display: block;
+  border-radius: 5px;
+}
+#jv-ss-img1{
+  float: right;
+  
+}
+#jv-ss-img2{
+  float: right;
+  margin-top: 20px;
+  margin-left: 5%;
+  
+}
+#jv-ss-img3, #jv-ss-img4, #jv-ss-img5{
+  float: left;
+  clear: both;
+  margin-top: 100px;
+  border: 1px solid #555555;
+}
+#jv-ss-img4 {
+  padding-right: 30px;
+}
+
+
+#s-main h1 {
+  font-family: "Lucida Console", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  
+}
+
+#f-bottom{
+  display: block;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  top: 150px;
+  width: 75%;
+  height: 25px;
+  margin: 50px auto 0;
+  border-radius: 4px;
+  box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
+}
+
+#f-bottom span{
+  font-family: sans-serif;
+  position: absolute;
+  display: inline;
+  vertical-align: bottom;
+  border-radius: 4px;
+  color: #222222;
+  padding: 0 2px;
+}
+
+
+
+
