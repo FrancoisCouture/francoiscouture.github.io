@@ -162,6 +162,8 @@ ul{
 
 #s-content {
   display: block;
+  text-align: left;
+  font-size: 16px;
   padding: 3% 2%;
   border-top: 3px solid #dddddd;
   border-radius: 10px;
@@ -175,6 +177,7 @@ ul{
   top: 100;
   max-width: 400px;
   max-height: 600px;
+  margin-bottom: 200px;
   border-radius: 20px 20px 20px 20px;
 }
 
