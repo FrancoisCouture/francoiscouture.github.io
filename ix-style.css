@@ -173,6 +173,7 @@ ul{
   position: relative;
   display: block;
   margin-left: 2%;
+  transform: translateY(12.5%);
   float: right;
   top: 100;
   max-width: 400px;

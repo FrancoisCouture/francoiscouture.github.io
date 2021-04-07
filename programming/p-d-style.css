@@ -198,7 +198,16 @@ ul{
 }
 .s-content img{
   display: block;
+  width: 75%;
   border-radius: 5px;
+  margin: 50px auto;
+}
+.s-content p{
+  text-align: left;
+  width: 75%;
+  margin: 15px auto;
+  font-family: Verdana;
+  font-size: 14px;
 }
 #jv-ss-img1{
   float: right;
@@ -230,10 +239,12 @@ ul{
 
 #f-bottom{
   display: block;
-  position: relative;
   text-align: left;
   z-index: 1;
-  top: 150px;
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  left: 12.5%;
   width: 75%;
   height: 25px;
   margin: 50px auto 0;

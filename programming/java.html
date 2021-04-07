@@ -70,24 +70,108 @@
 
     <div class="s-content" id="sc-1">
       <h1>Sudoku Solver</h1>
-      <img id="jv-ss-img2" src="../img/jv-ss-img2.PNG" alt="img1">
-      <img id="jv-ss-img1" src="../img/jv-ss-img1.PNG" alt="img2">
-      <img id="jv-ss-img3" src="../img/jv-ss-img3.PNG" alt="img3">
-      <img id="jv-ss-img4" src="../img/jv-ss-img4.PNG" alt="img4">
-      <img id="jv-ss-img5" src="../img/jv-ss-img5.PNG" alt="img5">
+      <div class="s-right">
+        <img id="jv-ss-img2" src="../img/jv-ss-img2.PNG" alt="img2">
+        <img id="jv-ss-img1" src="../img/jv-ss-img1.PNG" alt="img1"> 
+        <p>The program begins by presenting an incomplete sudoku board for the user. The board is randomly
+           generated and the user has to continue the program to receive a solved board. If the board has multiple
+           solutions, the program will find all possible answers, starting with the lowest numerical values.
+        </p>
+        <p> Randomizing the board always returns a board with thousands of solutions. However, the program is great when used
+            as a puzzle solver. Placing a custom board as opposed to randomizing will instantly give the solved board.
+            Useful for the difficult sudokus that come in the newspaper on Friday!
+        </p>
+      </div>
+
       
+      <div class="s-left">
+        <img id="jv-ss-img3" src="../img/jv-ss-img3.PNG" alt="img3">
+        <p> To generate a random sudoku board, the program begins at the top-left corner of the board. Then it randomizes two numbers:
+            <br>The <strong>emptyONum</strong> number is a chance number. If that number happens to be a 1, then it will be placed.
+            Similar to a coin toss or a dice roll, the odds decrease as you increase the allowed number range.
+            <br>The second number is the number that is placed in the square.
+        </p>
+        <p><br>If the coin toss succeeds, then it will go through the "possible" function. It will check to see if the number already 
+               exists in the row, column or square. If the number already exists, then the program will act as if it failed the coin toss 
+               and leave the case empty. If it is possible, the number is mapped to the random sudoku board.
+      </div>
+      
+      <div class="s-left">
+        <img id="jv-ss-img4" src="../img/jv-ss-img4.PNG" alt="img4">
+        <p>Here is what's contained in the "possible" function. It begins by checking the row and column that the parameter case belongs to.
+        If it finds the parameter number already exists in the map, then the "possible" test fails.<br> 
+        The third test checks the numbers that exist in the square. Since dividing integers floors the result (i.e. 5/3 = 1), you can multiply
+        the result of that division to find what square the parameter case belongs to.<br><br>
+        </p>
+        <p>Once the square is identified, it checks if the parameter number already exists in that square. If it succeeds the final test, then 
+        placing the number is determined to be possible.
+        </p>
+      </div>
+      
+      <div class="s-left">
+        <img id="jv-ss-img5" src="../img/jv-ss-img5.PNG" alt="img5">
+        <p>This code is what "solves" the sudoku.<br>
+        it begins at the top-left of the board checks if there's no number inside. It begins with "1", places it in the case and the function 
+        is called again. If the program is no longer able to place a number, it will empty the case and backtrack to the previous instance of
+        "solve".<br> This is called <strong>recursion</strong>. This cycle continues until a solution is found or until the program runs out of numbers to place.<br>
+        </p>
+        <p> <br>Once the cycle reaches the end of the board with a success, the number of solutions is incremented and the board is printed out.
+          The process will only stop when all solutions are found, or the system is manually stopped after a solution is found.
+        </p>
+        
+      </div>
     </div>
     <div class="s-content" id="sc-2">
       <h1>Snake Game</h1>
+      <div class="s-right">
+        <video width="600" autoplay loop muted>
+          <source src="snakeGame.mp4" type="video/mp4">
+          <source src="snakeGame.ogg" type="video/ogg">
+          Your browser does not support the video!
+        </video> 
+        <p>I wanted to learn and understand how java games are made! Java games use ticks to time and update events. This one runs at 10 frames per second.
+        That means the snake moves ten times every second!
+        </p>
+        <p>Snake games are a great way to begin developping games in any programming languages. The game is short, the rules are simple and there are many
+        ways of recreating it. I decided that with every tick, the snake would move one white square in distance. A square appears in
+        the direction it is heading and the last square of the line disappears. This creates the illusion of movement when, in fact, the snake is not moving at all!
+        Boundaries exist as well: The program is able to calculate whether the player square has run into its tail or the walls. The game then restarts immediately, 
+        but awaits user input to begin.</p>
+        <p>The program uses three object classes to drive the game: <strong>Player</strong>, <strong>PlayerFollow</strong> (the tail) and <strong>Fruit</strong>.
+        Player and Fruit extend the gameObject abstract class, while playerFollow extends the Player class.
+        </p>
+      </div>
       
     </div>
     <div class="s-content" id="sc-3">
       <h1>Tron Game</h1>
-      
+      <div class="s-right">
+        <video  autoplay loop muted>
+            <source src="bmtron.mp4" type="video/mp4">
+            <source src="bmtron.ogg" type="video/ogg">
+            Your browser does not support the video!
+        </video> 
+        <p>Next, I wanted to adapt the snake coding to make a game that was more exciting. I have a lot of good memories playing tron games with my friends, so
+          I wanted to try and make a version on my own. Similar to snake, it begins with two players and awaits user input before starting.
+         <p> Now, the "snakes" leave behind a permanent, laser tail. The concepts and classes are still the same as before: Run into borders, and you lose. To 
+         increase fun, I added a "game end" flash when a player wins. The game is two player only as I'm far from implementing computer opponents in games like this!
+         </p>
+        </p>
+        <p>This was considerably more difficult than the snake game; I'll have to approach the trail system differently so that I can increase the framerate
+          and optimization. I can increase the framerate by decreasing the size of my objects, but the trail system runs poorly since too many trail objects are
+          created. The problem can be solved by removing the tail objects entirely and have collision be decided on the red that is rendered on the playing field.
+          How about some color too? All my games so far have been in less than 3 colors, 2 of which are technically shades.
+        </p>
+      </div>
     </div>
     <div class="s-content" id="sc-4">
       <h1>Upcoming Projects</h1>
-      
+      <div class="s-right">
+        <p>&#8226;&#9;Version 2 of Tron game</p>
+        <p>&#8226;&#9;A side-scrolling game, like flappy bird</p>
+        <p>&#8226;&#9;3d sandbox (Minecraft?)</p>
+        <p>&#8226;&#9;Use of applets</p>
+      </div>
     </div> 
   </section>
   

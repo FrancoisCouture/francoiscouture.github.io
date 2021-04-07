@@ -1,13 +1,15 @@
 body{
   font-family: Arial;
   width: 100%;
+  height: 100%;
   margin: 0;
-  height: auto;
   min-width: 1000px;
+  min-height: 100%;
   text-align: center;
   color: black;
   font-size: 12px;
   line-height: 32px;
+  
 }
 #h-high{
   display: block;
@@ -189,35 +191,49 @@ ul{
   clear:left;
   position: relative;
   display: none;
-  height: 2750px;
   box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd, 0px -1px 5px black;
   border-radius: 0px 2px 2px 2px;
   z-index: 4;
   display: block;
   padding: 10px 5%;
+  overflow: auto;
 }
-.s-content img{
-  display: block;
-  border-radius: 5px;
+.s-content div{
+  overflow: auto;
+  margin-bottom: 50px;
+  width: 100%;
 }
-#jv-ss-img1{
+.s-content p{
+  text-align: left;
+  font-family: Verdana;
+  font-size: 14px;
+}
+.s-right img{
   float: right;
-  
+  margin-left: 5%;
+}
+.s-right p{
+  width: 45%;
 }
 #jv-ss-img2{
-  float: right;
   margin-top: 20px;
-  margin-left: 5%;
-  
 }
-#jv-ss-img3, #jv-ss-img4, #jv-ss-img5{
+.s-left img{
   float: left;
-  clear: both;
-  margin-top: 100px;
+  width: 50%;
   border: 1px solid #555555;
+  border-radius: 5px;
+  margin-right: 50px;
 }
-#jv-ss-img4 {
-  padding-right: 30px;
+
+.s-content video{
+  float:right;
+  width: 50%;
+  margin-left: 5%;
+  transform: translateY(25%);
+}
+#sc-2 video{
+  
 }
 
 
@@ -230,10 +246,12 @@ ul{
 
 #f-bottom{
   display: block;
-  position: relative;
   text-align: left;
   z-index: 1;
-  top: 150px;
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  left: 12.5%;
   width: 75%;
   height: 25px;
   margin: 50px auto 0;

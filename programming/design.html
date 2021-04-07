@@ -58,6 +58,22 @@
 
     <div class="s-content" id="sc-1">
       <h1>Calculator</h1>
+      <p>Here's one of my schematics. It is a calculator shield that is intended to placed on top of an Arduino, as
+        indicated by the headers.
+      </p>
+      <img id="ds-c-img1" width="1000" src="../img/ds-c-img1.png" alt="calculator">
+      <p>The i2C pullups connects the unused pins to the dc supply to keep the input high.
+      </p>
+      <p>The EEPROM is an erasable chip that will contain the calculator program.
+      </p>
+      <p>The relay detects a small incoming signal to allow a larger dc flow. When the relay is turned off, the voltage has
+        nowhere to go. Switching on the relay allows the dc power to return, hereby turning on the device.
+      </p>
+      <p>There are six screens connected to a TM1637 for timing, brightness control and display refresh. Bigger numbers than
+      six digits are impossible: The display LEDS are too big.
+      </p>
+      <p>Finally, there are 16 programmable buttons available, 10 of which are reserved for numbers.
+      </p>
     </div>
   </section>
   
