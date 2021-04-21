@@ -1,5 +1,5 @@
 body{
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   width: 100%;
   margin: 0;
   height: auto;
@@ -186,46 +186,41 @@ ul{
 
 
 .s-content{
-  clear:left;
+  clear: both;
   position: relative;
   display: none;
-  height: 2750px;
   box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd, 0px -1px 5px black;
   border-radius: 0px 2px 2px 2px;
-  z-index: 4;
+  z-index: 3;   /* Equal to the amount of section pages */
   display: block;
-  padding: 10px 5%;
+  padding: 10px 10% 50px;
 }
-.s-content img{
-  display: block;
-  border-radius: 5px;
-}
-#jv-ss-img1{
-  float: right;
-  
-}
-#jv-ss-img2{
-  float: right;
-  margin-top: 20px;
-  margin-left: 5%;
-  
-}
-#jv-ss-img3, #jv-ss-img4, #jv-ss-img5{
-  float: left;
-  clear: both;
-  margin-top: 100px;
-  border: 1px solid #555555;
-}
-#jv-ss-img4 {
-  padding-right: 30px;
-}
-
-
 #s-main h1 {
   font-family: "Lucida Console", sans-serif;
   font-size: 30px;
   margin-bottom: 30px;
-  
+}
+.s-content div{
+  overflow: auto;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.s-right p{
+  text-align: left;
+  font-family: Verdana;
+  font-size: 14px;
+}
+.s-right {
+  display: block;
+}
+.s-right, h3 {
+  text-align: left;
+}
+.s-right img{
+  float: right;
+  display: block;
+  margin-left: 5%;
+  width: 45%;
 }
 
 #f-bottom{

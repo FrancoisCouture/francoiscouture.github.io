@@ -5,33 +5,6 @@ var ddProg = document.getElementById("dd-prog");
 var ddAbt = document.getElementById("dd-abt");
 var tabs = document.getElementsByClassName("s-head");
 
-window.onload = function() {
-  var currentScrollpos = window.pageYOffset;
-  if (currentScrollpos > 100) {
-    highWindow.style.top = "-90px";
-    arrImg.style.opacity = "1";
-  }
-  
-  document.getElementById("sh-1").style.zIndex = "5";
-  document.getElementById("sh-2").style.zIndex = "4";
-  document.getElementById("sh-3").style.zIndex = "3";
-  document.getElementById("sh-4").style.zIndex = "2";
-  
-  var contents = document.getElementsByClassName("s-content");
-  contents[0].style.display = "block";
-  for(var i = 1; i < contents.length; i++){contents[i].style.display = "none";}
-}
-window.setInterval(function(){
-  if (getComputedStyle(highWindow).getPropertyValue("top") == "-90px"){
-    arrImg.style.transition = "opacity 0.2s";
-    arrImg.style.opacity = "1"; 
-      
-  }
-  
-}, 750);
-
-
-
 function setNavPos(){
   var currentScrollPos = window.pageYOffset;
   
@@ -72,6 +45,29 @@ window.onscroll = function() {
   setNavPos();
 }
 
+window.onload = function() {
+  
+  var currentScrollpos = window.pageYOffset;
+  if (currentScrollpos > 100) {
+    highWindow.style.top = "-90px";
+    arrImg.style.opacity = "1";
+  }
+   
+  var heads = document.getElementsByClassName("s-head");
+  for(var i = 0; i < heads.length; i++){heads[i].style.zIndex = heads.length+1 - i;}
+  
+  var contents = document.getElementsByClassName("s-content");
+  contents[0].style.display = "block";
+  for(var i = 1; i < contents.length; i++){contents[i].style.display = "none";}
+}
+window.setInterval(function(){
+  if (getComputedStyle(highWindow).getPropertyValue("top") == "-90px"){
+    arrImg.style.transition = "opacity 0.2s";
+    arrImg.style.opacity = "1"; 
+      
+  }
+  
+}, 750);
 
 /* Function *******************/
 function canClickNav(item) {
@@ -115,8 +111,12 @@ arrImg.onclick = function(){
 
 /* Function *******************/
 function canClickTab(tab) {
-  if(tab.style.zIndex < "5") {return tab.style.cursor = "pointer";}
-  else                        {return tab.style.cursor = "default"; }  
+  var contents = document.getElementsByClassName("s-content");
+  const element = document.querySelector('.s-content');
+  const style = getComputedStyle(element);
+  var zPage = style.zIndex;
+  
+  if(tab.style.zIndex <= zPage) {return tab.style.cursor = "pointer";}
 }
 /* Applies to */
 for(var i = 0;i < tabs.length;i++){
@@ -133,25 +133,28 @@ function switchTab(tab) {
     var contents = document.getElementsByClassName("s-content");
     var i = 0;
     for(var j = 0; j < heads.length; j++) {
-      heads[j].style.zIndex = "5";
+      heads[j].style.zIndex = heads.length+1;
+      console.log(heads[j].style.zIndex);
       contents[j].style.display = "none";
       }
     while(tab != heads.item(i)){i++;}
     
     /* decrement zIndex right */
-    
     var d = 0;
     for(var j = i; j < heads.length; j++) {
       heads[j].style.zIndex -= d;
+      console.log(heads[j].style.zIndex);
       d++;
     }
     /* decrement zIndex left  */
     var d = 0;
     for(var j = i; j >= 0; j--) {
       heads[j].style.zIndex -= d;
+      console.log(heads[j].style.zIndex);
       d++;
     }
     contents[i].style.display = "block";
+    tab.style.cursor = "default";
   } 
 } 
 /* Applies to */
@@ -159,3 +162,5 @@ for(var i = 0;i < tabs.length;i++){
   tabs[i].onclick = function() {switchTab(this);};
   
 }
+
+
