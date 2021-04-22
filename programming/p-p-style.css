@@ -189,7 +189,6 @@ ul{
   clear:left;
   position: relative;
   display: none;
-  height: 2750px;
   box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd, 0px -1px 5px black;
   border-radius: 0px 2px 2px 2px;
   z-index: 3;   /* Equal to the amount of section pages */
