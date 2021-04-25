@@ -1,18 +1,18 @@
 body{
   font-family: Arial, sans-serif;
+  color: black;
   width: 100%;
   margin: 0;
   height: auto;
   min-width: 1000px;
   text-align: center;
-  color: black;
   font-size: 12px;
   line-height: 32px;
 }
 #h-high{
+  z-index: 9;   /* Above content, always */
   display: block;
   position: fixed;
-  z-index: 9;
   background-color:white;
   top: 0;
   width: 75%;
@@ -30,23 +30,23 @@ body{
   background-color:white;
 }
 
-a, img {
+a, img{
   border: 0;
   text-decoration: none;
   outline: none;
 }
 
-#h-emblem {
+#h-emblem{
   display: inline-block;
   float:left;
 }
 
-#h-emblem img {
+#h-emblem img{
   width: 199px;
   height: 96px; 
 }
 
-.n-btns {
+.n-btns{
   display: inline-block;
   float: right;
   min-width: 380px;
@@ -54,10 +54,10 @@ a, img {
 }
 
 
-.n-btn {
+.n-btn{
   display: inline-block;
-  height: 100%;
   overflow: hidden;
+  height: 100%;
 }
 
 .n-btn a{
@@ -69,7 +69,7 @@ a, img {
   height: 100%;
 }
 
-.n-reg:hover {
+.n-reg:hover{
   transition: background-color 0.5s ease;
   background-color: #d3d3d3;
   border-radius: 2px;
@@ -101,16 +101,15 @@ a, img {
   transition: background-color 0.25s ease;
   background-color: #d3d3d3;
   border-radius: 2px;
-  
 }
 
-#dd-prog a img, #dd-abt a img {
-  position: relative;
+#dd-prog a img, #dd-abt a img{
   display: inline-block;
+  float: right;
+  position: relative;
+  vertical-align: middle;
   width: 45px;
   height: 45px;
-  vertical-align: middle;
-  float: right;
 }
 
 .n-special{ 
@@ -123,20 +122,19 @@ a, img {
   color: white;  
 }
 
-.n-special:hover {
+.n-special:hover{
   transition: background-color 0.5s ease;
   background-color: #0f708a;
-  
 }
 
 ul{
+  overflow: hidden;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
-#arr-i {
+#arr-i{
   display: block;
   position: fixed;
   top: -1%;
@@ -145,7 +143,7 @@ ul{
   opacity: 0;
 }
 
-#arr-img {
+#arr-img{
   width: 50px;
   height: 5px;
 }
@@ -156,50 +154,42 @@ ul{
   z-index: 1;
   top: 150px;
   width: 70%;
-  margin: 0 auto;
   min-width: 1000px;
+  margin: 0 auto;
 }
-
-#s-content {
-  display: block;
-  padding: 3% 2%;
-  border-top: 3px solid #dddddd;
-  border-radius: 10px;
+#s-main h1{
+  font-family: "Lucida Console", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .s-head{
-  position: relative;
   display: inline-block;
+  position: relative;
   float: left;
   text-align: left;
   font-size: 16px;
   background-color: white;
-  padding: 0 0 0% 1.5%;
   width: 175px;
   margin-left: -1%;
   border-radius: 15px 15px 0 0;
   box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
+  padding: 0 0 0% 1.5%;
 }
-#sh-1 {
+#sh-1{
   margin-left: 0%;
 }
 
-
 .s-content{
+  z-index: 3;   /* Equal to the amount of section pages */
+  display: none;
   clear: both;
   position: relative;
-  display: none;
   box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd, 0px -1px 5px black;
   border-radius: 0px 2px 2px 2px;
-  z-index: 3;   /* Equal to the amount of section pages */
   display: block;
   padding: 10px 10% 50px;
   margin-bottom: 225px;
-}
-#s-main h1 {
-  font-family: "Lucida Console", sans-serif;
-  font-size: 30px;
-  margin-bottom: 30px;
 }
 .s-content div{
   overflow: auto;
@@ -211,25 +201,24 @@ ul{
   font-family: Verdana;
   font-size: 14px;
 }
-.s-right {
+.s-right{
   display: block;
 }
-.s-right, h3 {
+.s-right, h3{
   text-align: left;
 }
 .s-right img{
-  float: right;
   display: block;
+  float: right;
   margin-left: 5%;
   width: 45%;
 }
 
 #f-bottom{
+  z-index: 9;   /* Above content, always */
   display: block;
-  text-align: left;
-  z-index: 1;
   position: fixed;
-  clear: both;
+  text-align: left;
   bottom: 0;
   left: 12.5%;
   width: 75%;
@@ -238,11 +227,10 @@ ul{
   border-radius: 4px;
   box-shadow: 0px -2px 2px #dddddd, 0px -5px 5px #dddddd;
 }
-
 #f-bottom span{
-  font-family: sans-serif;
-  position: absolute;
   display: inline;
+  position: absolute;
+  font-family: sans-serif;
   vertical-align: bottom;
   border-radius: 4px;
   color: #222222;

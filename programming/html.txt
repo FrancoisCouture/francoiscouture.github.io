@@ -1,143 +1,129 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<meta charset="UTF-8">
-<Title> Francois Couture </title>
-<head>
-<link rel="stylesheet" href="p-h-style.css">
-
-</head>
-
-<body>
-  
-  <header id="h-high">
-    <div id="h-emblem">
-    <a href="../index.html">
-      <img src="../img/logo.png" alt="logo">
-    </a>
-    </div>
-    <div class="n-btns"> 
-      <ul>
-        <li class="n-btn n-reg" id="n-abt"><a href="#About">About</a>
-          <div class="dd-nav" id="dd-abt">
-            <a href="../index.html">Home<img src="../img/dd-home.png" alt="home"></a>
-            <a href="../about/education.html">Education<img src="../img/dd-education.png" alt="education"></a>
-            <a href="../about/experience.html">Experience<img src="../img/dd-experience.png" alt="java"></a>
-            <a href="../about/resume.html">Resume<img src="../img/dd-resume.png" alt="dl"></a>
-            
-          </div>
-        </li>
-        <li class="n-btn n-reg" id="n-prog"><a href="#Programming">Programming</a>
-          <div class="dd-nav" id="dd-prog">
-            <a href="python.html">Python<img src="../img/dd-python.png" alt="python"></a>
-            <a href="java.html">Java<img src="../img/dd-java.png" alt="java"></a>
-            <a href="c.html">C (Language)<img src="../img/dd-c.png" alt="c"></a>
-            <a href="assembly.html">Assembly<img src="../img/dd-assembly.png" alt="assembly"></a>
-            <a href="html.html">HTML<img src="../img/dd-html.png" alt="html"></a>
-            <a href="design.html">Circuit Design<img src="../img/dd-circuit.png" alt="circuit"></a>
-          </div>
-        </li>
-       
-        <li class="n-btn n-special"><a href="mailto:Couturefrancois97@hotmail.com">Contact&nbsp;me</a></li>
-        
-      </ul>
-    </div>
-    
-  </header>
-  
-  <div id="arr-i">
-      <img id="arr-img" src="../img/arrowdown.png" alt="arrowdown">
-  </div>
-
-  
-  <section id="s-main">
-    <div class="s-head" id="sh-1">
-      website HTML
-    </div>
-    <div class="s-head" id="sh-2">
-      website CSS
-    </div>
-    <div class="s-head" id="sh-3">
-      website Javascript 
-    </div> 
-
-    <div class="s-content" id="sc-1">
-      <h1>website HTML</h1>
-      <div class="s-right">
-        <img src="../img/html-h-img1.png" alt="img1">
-        <p>Coming up with the idea of the website, I wanted it to have a few key traits. It should be thiner than the  
-          window, have drop down navigation bar and a low-profile body. Originally, there was supposed to be a solid
-          content body, but it was changed as it was too obtrusive. The concept was recycled to use shades, which
-          works great with the depth "feel" I'm going for.<br> 
-          In addition, there is a main division that encapsulates the heads and contents not present in the sketch.</p>
-        <p>The project began with the header. I use invisible drop-down navigation options that only become visible
-           when the user decides to hover over the buttons. The active becomes shaded, and I use javascript to
-           time the shading of the submenus. Easy!</p>
-        <p>I eventually had the idea of hiding the header bar as the user scrolled down. By hiding the bar, it would leave
-           the user with more space to see the website. When the user scrolls down, the code is triggered to raise the bar
-           "outside" of the browser. When scroll bar is at the top, it comes back into view. Neat!<br>
-           A little image of an arrow pointing down also becomes visible, indicating that, at any time, the user can decide
-           to lower the bar down without having to scroll back up.</p>
-        <p>To promote my stuff, I used folder tabs and bodies. That way, I can use less web pages and flex some javascript 
-           muscle.</p>
-        
+  <meta charset="UTF-8">
+  <Title> Francois Couture </title>
+  <head><link rel="stylesheet" href="p-h-style.css"></head>
+  <body>
+    <header id="h-high">
+      <div id="h-emblem">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="logo">
+        </a>
       </div>
-      <h3><i>Interested in the code?</i> Here it is:</h3>
-      <object">
-        <iframe src="html.txt" width="100%" height="500px"  frameborder="0" type="text/html" alt="html"></iframe>
-        <p><a href="../embed/html.pdf"><u>Download Instead</u></a></p>
-      </object>     
-    </div>
-    <div class="s-content" id="sc-2">
-      <h1>website CSS</h1>
-      <div class="s-right">
-        <img src="../img/html-h-img2.png" alt="img2">
-        <p>In the body section, some elements are set to default values. I removed the margins, the default font is 
-           Arial and sans-serif in black unless otherwise stated. Right now, all of the pages use their own version
-           of headers and footers. I should change that so that there's only one file of headers and footers that each
-           page will use instead of the current repetition. It would make editing a lot easier, but I'm worried about
-           potential conflicts.</p>
-        <p>For starters, I had to make sure the header bar was well above the rest of the page. It is hard-coded to
-           9, making it the most elevated object on the webpage. If at any point the user should desire to drop down 
-           the header, it will always be above the other contents on the page.</p>
-        <p>I had initially wanted an opacity transition at the bottom of the contents page. This is a little abitious
-           for the moment. I had too much trouble making it work with footer that's at the bottom of the page. The idea is
-           being shelved for another website.</p>
+      <div class="n-btns"> 
+        <ul>
+          <li class="n-btn n-reg" id="n-abt"><a href="#About">About</a>
+            <div class="dd-nav" id="dd-abt">
+              <a href="../index.html">Home<img src="../img/dd-home.png" alt="home"></a>
+              <a href="../about/education.html">Education<img src="../img/dd-education.png" alt="education"></a>
+              <a href="../about/experience.html">Experience<img src="../img/dd-experience.png" alt="java"></a>
+              <a href="../about/resume.html">Resume<img src="../img/dd-resume.png" alt="dl"></a>
+            </div>
+          </li>
+          <li class="n-btn n-reg" id="n-prog"><a href="#Programming">Programming</a>
+            <div class="dd-nav" id="dd-prog">
+              <a href="python.html">Python<img src="../img/dd-python.png" alt="python"></a>
+              <a href="java.html">Java<img src="../img/dd-java.png" alt="java"></a>
+              <a href="c.html">C (Language)<img src="../img/dd-c.png" alt="c"></a>
+              <a href="assembly.html">Assembly<img src="../img/dd-assembly.png" alt="assembly"></a>
+              <a href="html.html">HTML<img src="../img/dd-html.png" alt="html"></a>
+              <a href="design.html">Circuit Design<img src="../img/dd-circuit.png" alt="circuit"></a>
+            </div>
+          </li>
+          <li class="n-btn n-special">
+            <a href="mailto:Couturefrancois97@hotmail.com">Contact&nbsp;me</a>
+          </li>
+        </ul>
       </div>
-      <h3><i>Interested in the code?</i> Here it is:</h3>
-      <object">
-        <iframe src="p-h-style.css" width="100%" height="500px" type="text/html" frameborder="0" alt="css"></iframe>
-        <p><a href="../embed/css.pdf"><u>Download Instead</u></a></p>
-      </object>
+    </header>
+    <div id="arr-i">
+        <img id="arr-img" src="../img/arrowdown.png" alt="arrowdown">
     </div>
-    <div class="s-content" id="sc-3">
-      <h1>website Javascript</h1> 
-      <div class="s-right">
-        <img src="../img/html-h-img3.png" alt="img3">
-        <p>The "folder" look for different categories was a novel concept to me. It uses different content bodies that
-          turn invisible based on which head is active. It turned out it was possible to do so by exploiting z indices:
-          the active head matches the height of the content page and act as the top of the pyramid. The heads next to it
-          have their heights stepped down.<br></p>
-          <p>To do this, I had to first tell javascript to change the mouse to a "pointer" to indicate the head is 
-             clickable. That is, all of them except for the one that is active! Once a head is clicked, the <i>switchTab</i>
-             function is done and the appropriate content page becomes visible.</p>
-          <p>The illusion of height is even accentuated by my choice of shading! The active heads now simulate depth and 
-          interactivity someone would feel sifting through their folder cabinet.</p>
-          <p>I thought there was going to be some problems with the borders once the head and content came to
-             the same level. Lucky for me, both borders dissapeared, giving way to a seamless merge of both div bodies.
+    <section id="s-main">
+      <div class="s-head" id="sh-1">
+        website HTML
       </div>
-      <h3><i>Interested in the code?</i> Here it is:</h3>
-      <object">
-        <iframe src="p-script.js" width="100%" height="500px" type="text/html" frameborder="0" alt="java"></iframe>
-        <p><a href="../embed/javascript.pdf"><u>Download Instead</u></a></p>
-      </object>
-    </div>
-  </section>
-  
-  <footer id="f-bottom">
-    <span><i>All images and assets were obtained duty free or are provided with permission for personal usage</i></span>
-  </footer>
-  
-  <script src="p-script.js"></script>
-</body>
-
+      <div class="s-head" id="sh-2">
+        website CSS
+      </div>
+      <div class="s-head" id="sh-3">
+        website Javascript 
+      </div> 
+      <div class="s-content" id="sc-1">
+        <h1>website HTML</h1>
+        <div class="s-right">
+          <img src="../img/html-h-img1.png" alt="img1">
+          <p>Coming up with the idea of the website, I wanted it to have a few key traits. It should be thiner than the  
+            window, have drop down navigation bar and a low-profile body. Originally, there was supposed to be a solid
+            content body, but it was changed as it was too obtrusive. The concept was recycled to use shades, which
+            works great with the depth "feel" I'm going for.<br> 
+            In addition, there is a main division that encapsulates the heads and contents not present in the sketch.</p>
+          <p>The project began with the header. I use invisible drop-down navigation options that only become visible
+             when the user decides to hover over the buttons. The active becomes shaded, and I use javascript to
+             time the shading of the submenus. Easy!</p>
+          <p>I eventually had the idea of hiding the header bar as the user scrolled down. By hiding the bar, it would leave
+             the user with more space to see the website. When the user scrolls down, the code is triggered to raise the bar
+             "outside" of the browser. A sliver of the bar remains to indicate that it isn't completely gone. When scroll bar 
+             is at the top, it comes back into view. Neat!<br>
+             A little image of an arrow pointing down also becomes visible, indicating that, at any time, the user can decide
+             to lower the bar down without having to scroll back up.</p>
+          <p>To promote my stuff, I used folder tabs and bodies. That way, I can use less web pages and flex some javascript 
+             muscle.</p>  
+        </div>   
+        <h3><i>Interested in the code?</i> Here it is:</h3>
+        <object">
+          <iframe src="html.txt" width="100%" height="500px"  frameborder="0" type="text/html" alt="html"></iframe>
+          <p><a href="../embed/html.pdf"><u>Download Instead</u></a></p>
+        </object>     
+      </div>
+      <div class="s-content" id="sc-2">
+        <h1>website CSS</h1>
+        <div class="s-right">
+          <img src="../img/html-h-img2.png" alt="img2">
+          <p>In the body section, some elements are set to default values. I removed the margins, the default font is 
+             Arial and sans-serif in black unless otherwise stated. Right now, all of the pages use their own version
+             of headers and footers. I should change that so that there's only one file of headers and footers that each
+             page use instead of the current repetition. It would make editing a lot easier, but I'm worried about
+             potential conflicts.</p>
+          <p>For starters, I had to make sure the header bar was well above the rest of the page. It is hard-coded to
+             9, making it the most elevated object on the webpage. If at any point the user should desire to drop down 
+             the header, it will always be above the other contents on the page.</p>
+          <p>I had initially wanted an opacity transition at the bottom of the contents page. This is a little abitious
+             for the moment. I had too much trouble making it work with footer that's at the bottom of the page. The idea is
+             being shelved for a future website.</p>
+        </div>
+        <h3><i>Interested in the code?</i> Here it is:</h3>
+        <object">
+          <iframe src="p-h-style.css" width="100%" height="500px" type="text/html" frameborder="0" alt="css"></iframe>
+          <p><a href="../embed/css.pdf"><u>Download Instead</u></a></p>
+        </object>
+      </div>
+      <div class="s-content" id="sc-3">
+        <h1>website Javascript</h1> 
+        <div class="s-right">
+          <img src="../img/html-h-img3.png" alt="img3">
+          <p>The "folder" look for different categories was a novel concept to me, but one I was extremely excited about. 
+            It uses different content bodies that turn invisible based on which head is active. It turned out it was possible 
+            to do so by exploiting z indices: the active head matches the height of the content page and acts as if it was the 
+            top of a pyramid. The heads next to it have their heights stepped down.<br></p>
+            <p>To do this, I had to first tell javascript to change the mouse to a "pointer" to indicate the head is 
+               clickable. That is, all of them except for the one that is active! Once a head is clicked, the <i>switchTab</i>
+               function is done and the appropriate content page becomes visible.</p>
+            <p>The illusion of height is even accentuated by my shading! The active heads now simulate depth and 
+            interactivity someone would feel sifting through a folder cabinet.</p>
+            <p>I thought there was going to be some problems with the borders once the head and content came to
+               the same level. Lucky for me, both borders dissapeared, giving way to a seamless merge of both div bodies.
+        </div>
+        <h3><i>Interested in the code?</i> Here it is:</h3>
+        <object">
+          <iframe src="p-script.js" width="100%" height="500px" type="text/html" frameborder="0" alt="java"></iframe>
+          <p><a href="../embed/javascript.pdf"><u>Download Instead</u></a></p>
+        </object>
+      </div>
+    </section>
+    <footer id="f-bottom">
+      <span><i>All images and assets were obtained duty free or are provided with permission for personal usage</i></span>
+    </footer> 
+    <script src="p-script.js"></script>
+  </body>
 </html>
