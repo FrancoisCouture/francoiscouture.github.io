@@ -162,15 +162,19 @@ ul{
 }
 
 #s-content {
+  border-top: 3px solid #dddddd;
+  border-radius: 10px; 
+}
+
+.s-content {
   display: block;
   text-align: left;
   font-size: 16px;
   padding: 3% 2%;
-  border-top: 3px solid #dddddd;
-  border-radius: 10px;
+  margin-bottom: 100px;
 }
 
-#s-img1 {
+#s-img1, #s-img2 {
   position: relative;
   display: block;
   margin-left: 2%;
@@ -184,7 +188,6 @@ ul{
 #s-main h1 {
   font-family: "Lucida Console", sans-serif;
   font-size: 30px;
-  
 }
 
 #f-bottom{
