@@ -168,18 +168,18 @@ ul{
   padding: 3% 2%;
   border-top: 3px solid #dddddd;
   border-radius: 10px;
+  height: 600px;
 }
 
 #s-img1 {
   position: relative;
   display: block;
   margin-left: 2%;
-  transform: translateY(12.5%);
+  transform: translateY(-4%);
   float: right;
   top: 100;
   max-width: 400px;
-  max-height: 600px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   border-radius: 20px 20px 20px 20px;
 }
 
