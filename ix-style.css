@@ -168,7 +168,7 @@ ul{
   padding: 3% 2%;
   border-top: 3px solid #dddddd;
   border-radius: 10px;
-  height: 600px;
+  min-height: 600px;
 }
 
 #s-img1 {
